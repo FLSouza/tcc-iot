@@ -1,0 +1,12 @@
+version: '2'
+services:
+    tcciot-postgresql:
+        container_name: tcciot-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/tcciot/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=tcciot
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
